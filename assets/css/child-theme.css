@@ -3,79 +3,25 @@
  */
 
 /* 
- * This file contains the custom styles for the child theme.
- * It is enqueued in the functions.php file.
+ * This file contains custom styles for the child theme.
+ * To use this file, uncomment the wp_enqueue_style in functions.php
  */
 
-/* Global Styles */
-:root {
-  --primary-color: #0073aa;
-  --secondary-color: #23282d;
-  --accent-color: #f7941d;
-  --text-color: #333333;
-  --light-gray: #f7f7f7;
-  --medium-gray: #cccccc;
-  --dark-gray: #666666;
-}
-
+/* Example: Custom styles
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  color: var(--text-color);
-  line-height: 1.6;
+  font-family: Arial, sans-serif;
 }
 
-a {
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: var(--accent-color);
-}
-
-/* Header Styles */
 .site-header {
-  padding: 20px 0;
-  border-bottom: 1px solid var(--medium-gray);
-}
-
-/* Content Styles */
-.content-area {
-  padding: 2em 0;
+  background-color: #f8f8f8;
 }
 
 .entry-title {
-  margin-top: 0;
+  font-size: 2em;
 }
+*/
 
-.entry-meta {
-  color: var(--dark-gray);
-  font-size: 0.9em;
-  margin-bottom: 1em;
-}
 
-.entry-footer {
-  border-top: 1px solid var(--medium-gray);
-  padding-top: 1em;
-  margin-top: 2em;
-  font-size: 0.9em;
-}
-
-/* Sidebar Styles */
-.widget-area {
-  padding: 2em 0;
-}
-
-.widget {
-  margin-bottom: 2em;
-}
-
-.widget-title {
-  border-bottom: 2px solid var(--medium-gray);
-  padding-bottom: 0.5em;
-  font-size: 1.2em;
-}
 
 /* Footer Styles */
 .site-footer {

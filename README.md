@@ -1,63 +1,55 @@
-# WordPress Base Child Theme
+# WordPress Minimal Child Theme
 
-A versatile WordPress child theme template that can be used as a base for any parent theme.
+A minimal WordPress child theme template that can be used as a base for any parent theme.
 
 ## Features
 
-- Proper enqueuing of parent theme and child theme styles
-- Automatic creation of essential directories on theme activation
-- Custom functions file structure for better organization
-- Customizer settings for easy theme customization
-- Mobile-responsive design
-- Built-in helper functions and shortcodes
-- Well-documented code for easy customization
+- Simple and minimal structure
+- Proper enqueuing of parent theme styles
+- Ready-to-use commented examples for customization
+- Easy to understand and extend
 
 ## Getting Started
 
 1. Update the `Template` value in `style.css` to match your parent theme's directory name
 2. Activate the child theme in WordPress admin
-3. Customize the theme through WordPress Customizer
-4. Add your custom styles in `/assets/css/child-theme.css`
-5. Add your custom scripts in `/assets/js/child-theme.js`
+3. Uncomment and modify the included examples as needed
 
 ## Directory Structure
 
 ```
 base-child-theme/
-├── style.css                 # Theme information
-├── functions.php             # Main functions file
-├── assets/                   # Theme assets
-│   ├── css/                  # CSS files
-│   │   └── child-theme.css   # Main stylesheet
-│   ├── js/                   # JavaScript files
-│   │   ├── child-theme.js    # Main script file
-│   │   └── customizer.js     # Customizer scripts
+├── style.css                 # Theme information and basic styles
+├── functions.php             # Main functions file with minimal setup
+├── assets/                   # Theme assets (optional)
+│   ├── css/                  # Optional CSS files
+│   │   └── child-theme.css   # Example stylesheet
+│   ├── js/                   # Optional JavaScript files
+│   │   ├── child-theme.js    # Example script file
+│   │   └── customizer.js     # Example customizer scripts
 │   └── img/                  # Images directory
-├── inc/                      # Include files
-│   ├── custom-functions.php  # Custom functions
-│   └── customizer.php        # Customizer settings
-└── template-parts/           # Template parts directory
+├── inc/                      # Include files (optional)
+│   ├── custom-functions.php  # Example custom functions
+│   └── customizer.php        # Example customizer settings
+└── template-parts/           # Template parts directory (optional)
 ```
 
 ## Customization
 
-This child theme is designed to be easily customizable. Here are some common customization tasks:
+This child theme is designed to be minimal and easily customizable:
 
 ### Adding Custom Styles
-Add your custom styles to `/assets/css/child-theme.css`
+Add your custom styles directly to `style.css` or uncomment the example in `functions.php` to use `/assets/css/child-theme.css`
 
 ### Adding Custom Scripts
-Add your custom scripts to `/assets/js/child-theme.js`
+Uncomment the example in `functions.php` to use `/assets/js/child-theme.js`
 
 ### Adding Custom Functions
-Add your custom functions to `/inc/custom-functions.php`
-
-### Customizing Theme Options
-Use the WordPress Customizer to adjust theme options
+Uncomment the include lines in `functions.php` to use `/inc/custom-functions.php`
 
 ## Development by Imagewize
 
-This child theme was developed by [Imagewize](https://imagewize.com) as a base for WordPress development projects.
+This child theme was developed by [Imagewize](https://imagewize.com) as a minimal base for WordPress child themes.
 
 ## License
 

@@ -66,10 +66,12 @@ function base_child_custom_excerpt_more($more) {
  */
 function base_child_custom_login_logo() {
     if (file_exists(get_stylesheet_directory() . '/assets/img/logo.png')) {
+        $logo_url = get_stylesheet_directory_uri() . '/assets/img/logo.png';
         ?>
         <style type="text/css">
-            #login h1 a, .login h1 a {
-                background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.png);
+            #login h1 a, 
+            .login h1 a {
+                background-image: url('<?php echo esc_url($logo_url); ?>');
                 width: 320px;
                 height: 80px;
                 background-size: contain;

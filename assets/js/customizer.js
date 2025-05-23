@@ -1,19 +1,16 @@
 /**
  * WordPress Customizer preview script
+ * 
+ * To use this file, enable the customizer.php file in functions.php
  */
 
+/*
 (function($) {
-    // Live preview for the header background color
+    // Example: Live preview for the header background color
     wp.customize('header_background_color', function(value) {
         value.bind(function(newVal) {
             $('.site-header').css('background-color', newVal);
         });
     });
-    
-    // Live preview for the footer text
-    wp.customize('footer_text', function(value) {
-        value.bind(function(newVal) {
-            $('.site-info').html(newVal);
-        });
-    });
 })(jQuery);
+*/

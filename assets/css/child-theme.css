@@ -1,0 +1,130 @@
+/**
+ * Child Theme Custom Styles
+ */
+
+/* 
+ * This file contains the custom styles for the child theme.
+ * It is enqueued in the functions.php file.
+ */
+
+/* Global Styles */
+:root {
+  --primary-color: #0073aa;
+  --secondary-color: #23282d;
+  --accent-color: #f7941d;
+  --text-color: #333333;
+  --light-gray: #f7f7f7;
+  --medium-gray: #cccccc;
+  --dark-gray: #666666;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+/* Header Styles */
+.site-header {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--medium-gray);
+}
+
+/* Content Styles */
+.content-area {
+  padding: 2em 0;
+}
+
+.entry-title {
+  margin-top: 0;
+}
+
+.entry-meta {
+  color: var(--dark-gray);
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+.entry-footer {
+  border-top: 1px solid var(--medium-gray);
+  padding-top: 1em;
+  margin-top: 2em;
+  font-size: 0.9em;
+}
+
+/* Sidebar Styles */
+.widget-area {
+  padding: 2em 0;
+}
+
+.widget {
+  margin-bottom: 2em;
+}
+
+.widget-title {
+  border-bottom: 2px solid var(--medium-gray);
+  padding-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: var(--light-gray);
+  padding: 2em 0;
+  border-top: 1px solid var(--medium-gray);
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .content-area,
+  .widget-area {
+    width: 100%;
+    float: none;
+  }
+}
+
+/* Responsive iframe container for videos */
+.responsive-iframe-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.responsive-iframe-container iframe,
+.responsive-iframe-container object,
+.responsive-iframe-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Custom button style */
+.custom-button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}

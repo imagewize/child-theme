@@ -1,0 +1,21 @@
+/*
+Theme Name: Base Child Theme
+Theme URI: https://imagewize.com
+Description: A versatile WordPress child theme template that can be used as a base for any parent theme.
+Author: Imagewize
+Author URI: https://imagewize.com
+Template: parent-theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: base-child
+*/
+
+/* 
+* This file is intentionally minimal. Child theme styles should be 
+* loaded properly via functions.php using wp_enqueue_style for better performance.
+* 
+* IMPORTANT: Replace 'parent-theme' above with the folder name of the parent theme you intend to use.
+*/
+
+/* Add your custom CSS below this line */
